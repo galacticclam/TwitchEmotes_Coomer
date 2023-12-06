@@ -1,0 +1,10 @@
+judhead_emotes = {};
+judhead_emotes["judhead"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\judhead.tga:28:28";
+judhead_emotes["ResidentJud"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\ResidentJud.tga:28:28";
+judhead_emotes["Life"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\Life.tga:28:28";
+judhead_emotes["Death"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\Death.tga:28:28";
+judhead_emotes["sebg"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\sebg.tga:28:28";
+judhead_emotes["makback"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\makback.tga:28:28";
+judhead_emotes["abigail"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\abigail.tga:28:28";
+judhead_emotes["gotme"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\gotme.tga:28:28";
+judhead_emotes["frontalfan"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\frontalfan.tga:28:28";
