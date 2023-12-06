@@ -14,6 +14,9 @@ git merge-base --is-ancestor HEAD @{u} || {
     exit 1
 }
 
+git tag -f -a "$version-release" -m "Release $version"
+git push origin ":refs/tags/$version-release"
+
 ./build.sh
 
 gh release create \
