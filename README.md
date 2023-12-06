@@ -38,3 +38,5 @@ This requires [ImageMagick](https://imagemagick.org/script/download.php) on your
 1. Right click the emote and hit "Copy link"
 1. Run `./import.sh url emote_name [size]`
     * For example, `./import.sh 'https://cdn.discordapp.com/emojis/1174855519731716208.webp?size=96&quality=lossless' abigail`
+    * Size must be a power of 2, otherwise you'll see green squares for your emote
+    * The default size is 32. Only go higher for real-life pictures
