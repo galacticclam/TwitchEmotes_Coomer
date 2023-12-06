@@ -10,7 +10,7 @@ version_classic=$(grep "Version: " TwitchEmotes_Coomer-Classic.toc | cut -d ' ' 
     exit 1
 }
 
-version="$version_mainline"
+version="$version_mainline-release"
 
 [[ -z $(git status -s) ]] || {
     echo "Error: Not all changes committed"
@@ -24,11 +24,12 @@ git merge-base --is-ancestor HEAD @{u} || {
 
 ./build.sh
 
-git tag -f -a "$version-release" -m "Release $version"
-git push origin ":refs/tags/$version-release"
+git tag -f -a "$version" -m "$version"
+git push origin --tags "$version"
 
 gh release create \
     "$version" \
+    --verify-tag \
     --title "$version" \
     --notes "$version" \
     "dist/TwitchEmotes_Coomer-$version.zip"
