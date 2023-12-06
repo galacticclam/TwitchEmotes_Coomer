@@ -4,10 +4,11 @@ set -euo pipefail
 
 version=$(grep "Version: " TwitchEmotes_Coomer.toc | cut -d ' ' -f 3)
 
-dist_dir="dist/TwitchEmotes_Coomer"
-zip_name="dist/TwitchEmotes_Coomer-$version.zip"
+dist_root="dist"
+dist_dir="$dist_root/TwitchEmotes_Coomer"
+zip_name="$dist_root/TwitchEmotes_Coomer-$version.zip"
 
-rm -rf "$dist_dir"
+rm -rf "$dist_root"
 mkdir -p "$dist_dir"
 cp -r emotes "$dist_dir"
 cp emotes.lua "$dist_dir"
