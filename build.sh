@@ -14,7 +14,7 @@ version=$version_mainline
 
 dist_root="dist"
 dist_dir="$dist_root/TwitchEmotes_Coomer"
-zip_name="$dist_root/TwitchEmotes_Coomer-$version.zip"
+zip_name="$dist_root/TwitchEmotes_Coomer-$version-release.zip"
 
 rm -rf "$dist_root"
 mkdir -p "$dist_dir"
