@@ -8,3 +8,4 @@ judhead_emotes["makback"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\mak
 judhead_emotes["abigail"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\abigail.tga:28:28";
 judhead_emotes["gotme"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\gotme.tga:28:28";
 judhead_emotes["frontalfan"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\frontalfan.tga:28:28";
+judhead_emotes["catErm"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\catErm.tga:28:28";
