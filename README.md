@@ -14,14 +14,23 @@ WowUp:
 1. Install https://wowup.io/
 1. In WowUp, install from URL with the URL `https://github.com/galacticclam/TwitchEmotes_Coomer`
 
-## Publishing a new version of this addon
+## Development
+
+### Testing your changes
+
+1. Run `./build.sh`. A zip file will be created in `/dist`
+1. Unzip this file in your Addons directory
+
+### Publishing a new version of this addon
+
+This requires the [GitHub CLI](https://cli.github.com/). Log in with `gh auth login`.
 
 1. Update the version number in `TwitchEmotes_Coomer.toc`
 1. Push the updated `TwitchEmotes_Coomer.toc` file
-1. Run `./build.sh`. A zip file will be created in `/dist`
-1. Use the zip file to create a release on https://github.com/galacticclam/TwitchEmotes_Coomer/releases/new
+1. Run `./release.sh`
+1. Review and publish the draft
 
-## Importing Discord emotes
+### Importing Discord emotes
 
 This requires [ImageMagick](https://imagemagick.org/script/download.php) on your `$path`
 
