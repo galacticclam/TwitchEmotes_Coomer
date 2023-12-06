@@ -28,7 +28,6 @@ This requires the [GitHub CLI](https://cli.github.com/). Log in with `gh auth lo
 1. Update the version number in `TwitchEmotes_Coomer.toc`
 1. Push the updated `TwitchEmotes_Coomer.toc` file
 1. Run `./release.sh`
-1. Review and publish the draft
 
 ### Importing Discord emotes
 
