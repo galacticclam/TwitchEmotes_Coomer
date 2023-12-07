@@ -14,4 +14,4 @@ magick "$image" -background none -gravity center -extent "${size}x${size}" "$ima
 newline='["'$2'"] = basePath .. "'$2'.tga:28:28",'
 
 # Insert before the last line (before the closing bracket)
-sed -i -e '$i\'"$newline" emotes.lua
+sed -i -e '$i\'"    $newline" emotes.lua
