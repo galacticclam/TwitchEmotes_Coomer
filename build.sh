@@ -18,7 +18,8 @@ zip_name="$dist_root/TwitchEmotes_Coomer-$version-release.zip"
 
 rm -rf "$dist_root"
 mkdir -p "$dist_dir"
-cp -r emotes "$dist_dir"
+mkdir "$dist_dir/emotes"
+for img in emotes/* ; do magick "$img" "$dist_dir/${img%.*}.tga" ; done
 cp emotes.lua "$dist_dir"
 cp main.lua "$dist_dir"
 cp TwitchEmotes_Coomer-Mainline.toc "$dist_dir"

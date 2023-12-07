@@ -5,8 +5,9 @@ Requires [Twitch Emotes v2](https://www.curseforge.com/wow/addons/twitch-emotes-
 Manual instructions:
 
 1. Go to https://github.com/galacticclam/TwitchEmotes_Coomer/releases/latest
-1. Extract `TwitchEmotes_Coomer`` to your Addons directory.
+1. Extract `TwitchEmotes_Coomer` to your Addons directory.
     * If you're playing retail, it's likely in `C:\Program Files (x86)\World of Warcraft\_retail_\Interface\Addons`
+    * Classic is  `C:\Program Files (x86)\World of Warcraft\_classic_era_\Interface\Addons`
 1. Reload/restart WoW
 
 WowUp:
@@ -16,6 +17,20 @@ WowUp:
 
 ## Development
 
+### Required programs
+
+* bash, you can get it from [Git](https://git-scm.com/downloads)
+* [ImageMagick](https://imagemagick.org/script/download.php), make sure it's on your [$PATH](https://www.java.com/en/download/help/path.html). The installer will do this for you if "Add application directory to your system path" is checked.
+* [GitHub CLI](https://cli.github.com/). Log in with `gh auth login`. Only needed for publishing new versions.
+
+Alternatively, install [winget](https://winget.run) and then run this:
+
+```sh
+winget install -e --id Git.Git
+winget install -e --id GitHub.cli
+winget install -e --id ImageMagick.ImageMagick
+```
+
 ### Testing your changes
 
 1. Run `./build.sh`. A zip file will be created in `/dist`
@@ -23,15 +38,11 @@ WowUp:
 
 ### Publishing a new version of this addon
 
-This requires the [GitHub CLI](https://cli.github.com/). Log in with `gh auth login`.
-
-1. Update the version number in `TwitchEmotes_Coomer.toc`
-1. Push the updated `TwitchEmotes_Coomer.toc` file
+1. Update the version number in `TwitchEmotes_Coomer-Mainline.toc` and `TwitchEmotes_Coomer-Classic.toc`
+1. Push the updated version numbers
 1. Run `./release.sh`
 
 ### Importing Discord emotes
-
-This requires [ImageMagick](https://imagemagick.org/script/download.php) on your `$path`
 
 1. Send an emote in a Discord channel with nothing else, so you get a big version of the emote.
 1. Right click the emote and hit "Copy link"
