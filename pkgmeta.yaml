@@ -1,9 +1,0 @@
-# https://support.curseforge.com/en/support/solutions/articles/9000197952-preparing-the-packagemeta-file
-
-ignore:
-- .gitignore
-- build.sh
-- import.sh
-- LICENSE.md
-- README.md
-- release.sh
