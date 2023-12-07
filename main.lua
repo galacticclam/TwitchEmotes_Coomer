@@ -1,14 +1,14 @@
-function judhead_startup() 
+function judhead_startup()
     local suggestions = {};
     local i = 1;
 
     for k, v in pairs(judhead_emotes) do
         TwitchEmotes:AddEmote(k, k, v);
-        
+
         suggestions[i] = k;
-        i = i + 1;    
+        i = i + 1;
     end
-    
+
     judhead_initsuggestions(suggestions);
 end
 
@@ -21,15 +21,15 @@ end
 
 function judhead_initsuggestions(suggestions)
     if AllTwitchEmoteNames ~= nil and Emoticons_Settings ~= nil and Emoticons_RenderSuggestionFN ~= nil and Emoticons_Settings["ENABLE_AUTOCOMPLETE"] then
-        
+
         judhead_concat(suggestions, AllTwitchEmoteNames);
         table.sort(suggestions);
 
         for i=1, NUM_CHAT_WINDOWS do
             local frame = _G["ChatFrame"..i]
-    
+
             local maxButtonCount = 20;
-    
+
             SetupAutoComplete(frame.editBox, suggestions, maxButtonCount, {
                 perWord = true,
                 activationChar = ':',
@@ -55,6 +55,14 @@ function judhead_initsuggestions(suggestions)
                 useArrowButtons = true,
             });
         end
+    end
+end
+
+function judhead_dump()
+    for k, v in pairs(judhead_emotes) do
+        print("name=", k)
+        print("path=", v)
+        print(" |T" .. v .. "|t")
     end
 end
 
