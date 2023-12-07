@@ -1,11 +1,23 @@
-judhead_emotes = {};
-judhead_emotes["judhead"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\judhead.tga:28:28";
-judhead_emotes["ResidentJud"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\ResidentJud.tga:28:28";
-judhead_emotes["Life"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\Life.tga:28:28";
-judhead_emotes["Death"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\Death.tga:28:28";
-judhead_emotes["sebg"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\sebg.tga:28:28";
-judhead_emotes["makback"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\makback.tga:28:28";
-judhead_emotes["abigail"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\abigail.tga:28:28";
-judhead_emotes["gotme"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\gotme.tga:28:28";
-judhead_emotes["frontalfan"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\frontalfan.tga:28:28";
-judhead_emotes["catErm"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\catErm.tga:28:28";
+basePath = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\"
+
+judhead_emotes = {
+    -- Coomer Specfic Memes
+    ["judhead"] = basePath .. "judhead.tga:28:28",
+    ["ResidentJud"] = basePath .. "ResidentJud.tga:28:28",
+    ["sebg"] = basePath .. "sebg.tga:28:28",
+    ["makback"] = basePath .. "makback.tga:28:28",
+    ["abigail"] = basePath .. "abigail.tga:28:28",
+    ["frontalfan"] = basePath .. "frontalfan.tga:28:28",
+    -- General Memes
+    ["Life"] = basePath .. "Life.tga:28:28",
+    ["Death"] = basePath .. "Death.tga:28:28",
+    ["gotme"] = basePath .. "gotme.tga:28:28",
+    ["catErm"] = basePath .. "catErm.tga:28:28",
+    ["cheeky"] = basePath .. "cheeky.tga:28:28",
+    ["DRATTY"] = basePath .. "DRATTY.tga:28:28",
+    ["Fiddy"] = basePath .. "Fiddy.tga:28:28",
+    ["garf"] = basePath .. "garf.tga:28:28",
+    ["LetHimCook"] = basePath .. "LetHimCook.tga:28:28",
+    ["Stare"] = basePath .. "catStare.tga:28:28",
+    ["catEhm"] = basePath .. "catEhm.tga:28:28"
+}
