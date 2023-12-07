@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+stage=${1:-alpha}
+
 version_mainline=$(grep "Version: " TwitchEmotes_Coomer-Mainline.toc | cut -d ' ' -f 3)
 version_classic=$(grep "Version: " TwitchEmotes_Coomer-Classic.toc | cut -d ' ' -f 3)
 
@@ -10,11 +12,11 @@ version_classic=$(grep "Version: " TwitchEmotes_Coomer-Classic.toc | cut -d ' ' 
     exit 1
 }
 
-version=$version_mainline
+version="$version_mainline-$stage"
 
 dist_root="dist"
 dist_dir="$dist_root/TwitchEmotes_Coomer"
-zip_name="$dist_root/TwitchEmotes_Coomer-$version-release.zip"
+zip_name="$dist_root/TwitchEmotes_Coomer-$version.zip"
 
 rm -rf "$dist_root"
 mkdir -p "$dist_dir"

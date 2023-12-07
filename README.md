@@ -38,9 +38,13 @@ winget install -e --id ImageMagick.ImageMagick
 
 ### Publishing a new version of this addon
 
+You need to be a contributor on the repo and a member of the [CurseForge project](https://legacy.curseforge.com/wow/addons/coomer-illidan-twitch-emotes) for this to work.
+
+1. Create an empty `.env` file in the repository root.
+1. Create a CurseForge API token and enter it in this file: `CURSEFORGE_API_TOKEN=...`
 1. Update the version number in `TwitchEmotes_Coomer-Mainline.toc` and `TwitchEmotes_Coomer-Classic.toc`
 1. Push the updated version numbers
-1. Run `./release.sh`
+1. Run `./release.sh release`, or `./release.sh` for testing
 
 ### Importing Discord emotes
 
