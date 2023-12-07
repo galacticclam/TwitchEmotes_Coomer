@@ -11,6 +11,7 @@ curl "$url" -o "emotes/$2.webp"
 
 magick "$image" -background none -gravity center -extent "${size}x${size}" "$image"
 
-newline='judhead_emotes["'$2'"] = "Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\'$2'.tga:28:28";'
+newline='["'$2'"] = basePath .. "'$2'.tga:28:28",'
 
-echo "$newline" >> emotes.lua
+# Insert before the last line (before the closing bracket)
+sed -i -e '$i\'"$newline" emotes.lua
