@@ -26,7 +26,7 @@ git merge-base --is-ancestor HEAD @{u} || {
     exit 1
 }
 
-./build.sh
+./build.sh "$stage"
 
 git tag -f -a "$version" -m "$version"
 git push origin --tags "$version"
