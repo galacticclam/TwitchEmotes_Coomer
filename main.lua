@@ -66,4 +66,50 @@ function judhead_dump()
     end
 end
 
+local function escpattern(x)
+    return (x:gsub('%%', '%%%%')
+             :gsub('^%^', '%%^')
+             :gsub('%$$', '%%$')
+             :gsub('%(', '%%(')
+             :gsub('%)', '%%)')
+             :gsub('%.', '%%.')
+             :gsub('%[', '%%[')
+             :gsub('%]', '%%]')
+             :gsub('%*', '%%*')
+             :gsub('%+', '%%+')
+             :gsub('%-', '%%-')
+             :gsub('%?', '%%?'))
+end
+
+function TwitchEmotesAnimator_UpdateEmoteInFontString(fontstring, widthOverride, heightOverride)
+    local txt = fontstring:GetText();
+    if (txt ~= nil) then
+        for emoteTextureString in txt:gmatch("(|TInterface\\AddOns\\TwitchEmotes.*|t)") do
+            local imagepath = emoteTextureString:match("|T(Interface\\AddOns\\TwitchEmotes.*tga).-|t")
+
+            local animdata = TwitchEmotes_animation_metadata[imagepath];
+            if (animdata ~= nil) then
+                local framenum = TwitchEmotes_GetCurrentFrameNum(animdata);
+                local nTxt;
+                if(widthOverride ~= nil or heightOverride ~= nil) then
+                    nTxt = txt:gsub(escpattern(emoteTextureString),
+                                        TwitchEmotes_BuildEmoteFrameStringWithDimensions(
+                                        imagepath, animdata, framenum, widthOverride, heightOverride))
+                else
+                    nTxt = txt:gsub(escpattern(emoteTextureString),
+                                      TwitchEmotes_BuildEmoteFrameString(
+                                        imagepath, animdata, framenum))
+                end
+
+                -- If we're updating a chat message we need to alter the messageInfo as wel
+                if (fontstring.messageInfo ~= nil) then
+                    fontstring.messageInfo.message = nTxt
+                end
+                fontstring:SetText(nTxt);
+                txt = nTxt;
+            end
+        end
+    end
+end
+
 judhead_startup();
