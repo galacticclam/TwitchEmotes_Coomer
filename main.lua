@@ -60,9 +60,7 @@ end
 
 function judhead_dump()
     for k, v in pairs(judhead_emotes) do
-        print("name=", k)
-        print("path=", v)
-        print(" |T" .. v .. "|t")
+        print( "|T" .. v .. "|t name =", k, "path =", v)
     end
 end
 
