@@ -34,4 +34,5 @@ judhead_emotes = {
     ["catYep"] = basePath .. "catYep.tga:28:28",
     ["catNope"] = basePath .. "catNope.tga:28:28",
     ["KEKWait2"] = basePath .. "KEKWait2.tga:28:28",
+    ["Corpa"] = basePath .. "Corpa.tga:28:28",
 }
