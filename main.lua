@@ -59,8 +59,22 @@ function judhead_initsuggestions(suggestions)
 end
 
 function judhead_dump()
+    local str = ""
+    local i = 0
+
     for k, v in pairs(judhead_emotes) do
-        print( "|T" .. v .. "|t name =", k, "path =", v)
+        str = str .. "|Htel:name = " .. k .. "\npath = " .. v .. "|h|T" .. v .. "|t|h "
+
+        i = i + 1
+        if i == 8 then
+            print(str)
+            str = ""
+            i = 0
+        end
+    end
+
+    if i > 0 then
+        print(str)
     end
 end
 
