@@ -82,8 +82,8 @@ end
 function TwitchEmotesAnimator_UpdateEmoteInFontString(fontstring, widthOverride, heightOverride)
     local txt = fontstring:GetText();
     if (txt ~= nil) then
-        for emoteTextureString in txt:gmatch("(|TInterface\\AddOns\\TwitchEmotes.*|t)") do
-            local imagepath = emoteTextureString:match("|T(Interface\\AddOns\\TwitchEmotes.*tga).-|t")
+        for emoteTextureString in txt:gmatch("(|TInterface\\AddOns\\TwitchEmotes.-|t)") do
+            local imagepath = emoteTextureString:match("|T(Interface\\AddOns\\TwitchEmotes.-tga).-|t")
 
             local animdata = TwitchEmotes_animation_metadata[imagepath];
             if (animdata ~= nil) then
