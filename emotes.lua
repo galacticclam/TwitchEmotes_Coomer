@@ -42,4 +42,5 @@ judhead_emotes = {
     [":clam:"] = basePath .. "clam.tga:28:28",
     ["CAUGHT"] = basePath .. "CAUGHT.tga:28:56",
     ["SLUDGE"] = basePath .. "SLUDGE.tga:28:56",
+    ["YOUCANT"] = basePath .. "YOUCANT.tga:28:28",
 }
