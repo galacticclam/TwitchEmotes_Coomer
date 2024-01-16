@@ -10,3 +10,4 @@ TwitchEmotes_animation_metadata[basePath .. "catNope.tga"] = {["nFrames"] = 2, [
 TwitchEmotes_animation_metadata[basePath .. "LETSFUCKINGSHIT.tga"] = {["nFrames"] = 11, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 512, ["framerate"] = 18}
 TwitchEmotes_animation_metadata[basePath .. "GAMBA.tga"] = {["nFrames"] = 29, ["frameWidth"] = 32, ["frameHeight"] = 27, ["imageWidth"] = 32, ["imageHeight"] = 1024, ["framerate"] = 18}
 TwitchEmotes_animation_metadata[basePath .. "clam.tga"] = {["nFrames"] = 8, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 256, ["framerate"] = 12}
+TwitchEmotes_animation_metadata[basePath .. "THEVOICES.tga"] = {["nFrames"] = 45, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 2048, ["framerate"] = 18}
