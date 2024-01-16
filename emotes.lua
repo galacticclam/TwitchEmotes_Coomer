@@ -43,4 +43,8 @@ judhead_emotes = {
     ["CAUGHT"] = basePath .. "CAUGHT.tga:28:56",
     ["SLUDGE"] = basePath .. "SLUDGE.tga:28:56",
     ["YOUCANT"] = basePath .. "YOUCANT.tga:28:28",
+    ["ZUGGING"] = basePath .. "ZUGGING.tga:28:84:0:0:128:32:0:96:0:32",
+    ["DOYOUFEELTHEWEIGHTOFYOURSINS"] = basePath .. "DOYOUFEELTHEWEIGHTOFYOURSINS.tga:28:28",
+    ["THEVOICES"] = basePath .. "THEVOICES.tga:28:28",
+    ["ppOverheat"] = basePath .. "ppOverheat.tga:28:28",
 }
