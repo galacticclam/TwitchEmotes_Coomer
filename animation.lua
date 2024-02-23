@@ -15,3 +15,7 @@ TwitchEmotes_animation_metadata[basePath .. "ppOverheat.tga"] = {["nFrames"] = 8
 TwitchEmotes_animation_metadata[basePath .. "HECOOKING.tga"] = {["nFrames"] = 38, ["frameWidth"] = 32, ["frameHeight"] = 31, ["imageWidth"] = 32, ["imageHeight"] = 2048, ["framerate"] = 18}
 TwitchEmotes_animation_metadata[basePath .. "THINKING.tga"] = {["nFrames"] = 26, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 1024, ["framerate"] = 18}
 TwitchEmotes_animation_metadata[basePath .. "treeDance.tga"] = {["nFrames"] = 53, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 2048, ["framerate"] = 20}
+TwitchEmotes_animation_metadata[basePath .. "GAGGERS.tga"] = {["nFrames"] = 16, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 512, ["framerate"] = 9}
+TwitchEmotes_animation_metadata[basePath .. "awaree.tga"] = {["nFrames"] = 16, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 512, ["framerate"] = 12}
+TwitchEmotes_animation_metadata[basePath .. "Joeling.tga"] = {["nFrames"] = 8, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 256, ["framerate"] = 24}
+TwitchEmotes_animation_metadata[basePath .. "donut.tga"] = {["nFrames"] = 2, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 64, ["framerate"] = 12}
