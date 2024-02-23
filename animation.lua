@@ -14,3 +14,4 @@ TwitchEmotes_animation_metadata[basePath .. "THEVOICES.tga"] = {["nFrames"] = 45
 TwitchEmotes_animation_metadata[basePath .. "ppOverheat.tga"] = {["nFrames"] = 8, ["frameWidth"] = 32, ["frameHeight"] = 28, ["imageWidth"] = 32, ["imageHeight"] = 512, ["framerate"] = 18}
 TwitchEmotes_animation_metadata[basePath .. "HECOOKING.tga"] = {["nFrames"] = 38, ["frameWidth"] = 32, ["frameHeight"] = 31, ["imageWidth"] = 32, ["imageHeight"] = 2048, ["framerate"] = 18}
 TwitchEmotes_animation_metadata[basePath .. "THINKING.tga"] = {["nFrames"] = 26, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 1024, ["framerate"] = 18}
+TwitchEmotes_animation_metadata[basePath .. "treeDance.tga"] = {["nFrames"] = 53, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 2048, ["framerate"] = 20}
