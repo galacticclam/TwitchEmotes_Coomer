@@ -75,4 +75,12 @@ judhead_emotes = {
     ["BASADO"] = basePath .. "BASADO.tga:28:28",
     ["pepeS"] = basePath .. "pepeS.tga:28:28",
     [":ok:"] = basePath .. "ok.tga:28:28",
+    ["IntentDeclared"] = basePath .. "IntentDeclared.tga:28:28",
+    ["Pointless"] = basePath .. "Pointless.tga:28:56",
+    ["Crungo"] = basePath .. "Crungo.tga:28:28",
+    ["MushroomNow"] = basePath .. "MushroomNow.tga:28:28",
+    ["Schrumge"] = basePath .. "Schrumge.tga:28:28",
+    ["PETTHESHROOM"] = basePath .. "PETTHESHROOM.tga:28:28",
+    ["Catting"] = basePath .. "Catting.tga:28:28",
+    ["peepoSenora"] = basePath .. "peepoSenora.tga:28:28",
 }

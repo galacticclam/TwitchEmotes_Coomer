@@ -19,3 +19,6 @@ TwitchEmotes_animation_metadata[basePath .. "GAGGERS.tga"] = {["nFrames"] = 16, 
 TwitchEmotes_animation_metadata[basePath .. "awaree.tga"] = {["nFrames"] = 16, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 512, ["framerate"] = 12}
 TwitchEmotes_animation_metadata[basePath .. "Joeling.tga"] = {["nFrames"] = 8, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 256, ["framerate"] = 24}
 TwitchEmotes_animation_metadata[basePath .. "donut.tga"] = {["nFrames"] = 2, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 64, ["framerate"] = 12}
+TwitchEmotes_animation_metadata[basePath .. "MushroomNow.tga"] = {["nFrames"] = 2, ["frameWidth"] = 32, ["frameHeight"] = 29, ["imageWidth"] = 32, ["imageHeight"] = 64, ["framerate"] = 12}
+TwitchEmotes_animation_metadata[basePath .. "PETTHESHROOM.tga"] = {["nFrames"] = 5, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 256, ["framerate"] = 18}
+TwitchEmotes_animation_metadata[basePath .. "Catting.tga"] = {["nFrames"] = 3, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 128, ["framerate"] = 18}

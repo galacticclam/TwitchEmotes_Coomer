@@ -100,6 +100,7 @@ function TwitchEmotesAnimator_UpdateEmoteInFontString(fontstring, widthOverride,
             local imagepath = emoteTextureString:match("|T(Interface\\AddOns\\TwitchEmotes.-tga).-|t")
 
             local animdata = TwitchEmotes_animation_metadata[imagepath];
+            -- print(animdata)
             if (animdata ~= nil) then
                 local framenum = TwitchEmotes_GetCurrentFrameNum(animdata);
                 local nTxt;
