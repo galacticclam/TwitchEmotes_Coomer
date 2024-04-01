@@ -95,4 +95,9 @@ judhead_emotes = {
     ["WhatTheFuckDidYouJustFuckingSayAboutMeYouLittleBitch"] = basePath .. "WhatTheFuckDidYouJustFuckingSayAboutMeYouLittleBitch.tga:28:28",
     ["DaddysShroom"] = basePath .. "DaddysShroom.tga:28:28",
     ["jupijej"] = basePath .. "jupijej.tga:28:28",
+    ["obliteratedthanaho"] = basePath .. "obliteratedthanaho.tga:28:28",
+    ["Gregory"] = basePath .. "Gregory.tga:28:28",
+    ["Mewing"] = basePath .. "Mewing.tga:28:28",
+    ["buh"] = basePath .. "buh.tga:28:28",
+    ["pull15"] = basePath .. "pull15.tga:28:28",
 }
