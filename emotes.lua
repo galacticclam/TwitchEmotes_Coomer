@@ -28,7 +28,6 @@ judhead_emotes = {
     ["Chatter"] = basePath .. "Chatter.tga:28:28",
     ["catPls"] = basePath .. "catPls.tga:28:28",
     ["Cooking"] = basePath .. "Cooking.tga:28:28",
-    ["MONKE"] = basePath .. "MONKE.tga:28:28",
     ["SCHIZO"] = basePath .. "SCHIZO.tga:28:28",
     ["catYep"] = basePath .. "catYep.tga:28:28",
     ["catNope"] = basePath .. "catNope.tga:28:28",
@@ -95,9 +94,7 @@ judhead_emotes = {
     ["WhatTheFuckDidYouJustFuckingSayAboutMeYouLittleBitch"] = basePath .. "WhatTheFuckDidYouJustFuckingSayAboutMeYouLittleBitch.tga:28:28",
     ["DaddysShroom"] = basePath .. "DaddysShroom.tga:28:28",
     ["jupijej"] = basePath .. "jupijej.tga:28:28",
-    ["obliteratedthanaho"] = basePath .. "obliteratedthanaho.tga:28:28",
     ["Gregory"] = basePath .. "Gregory.tga:28:28",
-    ["Mewing"] = basePath .. "Mewing.tga:28:28",
     ["buh"] = basePath .. "buh.tga:28:28",
     ["pull15"] = basePath .. "pull15.tga:28:28",
 }
