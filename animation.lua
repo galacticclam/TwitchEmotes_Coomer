@@ -27,3 +27,4 @@ TwitchEmotes_animation_metadata[basePath .. "Pivo.tga"] = {["nFrames"] = 124, ["
 TwitchEmotes_animation_metadata[basePath .. "jupijej.tga"] = {["nFrames"] = 16, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 512, ["framerate"] = 18}
 TwitchEmotes_animation_metadata[basePath .. "obliteratedthanaho.tga"] = {["nFrames"] = 134, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 8192, ["framerate"] = 18}
 TwitchEmotes_animation_metadata[basePath .. "buh.tga"] = {["nFrames"] = 98, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 4096, ["framerate"] = 18}
+TwitchEmotes_animation_metadata[basePath .. "slam.tga"] = {["nFrames"] = 57, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 2048, ["framerate"] = 14}
