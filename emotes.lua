@@ -50,7 +50,6 @@ judhead_emotes = {
     ["Noirge"] = basePath .. "Noirge.tga:28:28",
     ["HECOOKING"] = basePath .. "HECOOKING.tga:56:28",
     ["THINKING"] = basePath .. "THINKING.tga:56:28",
-    ["dented"] = basePath .. "dented.tga:28:28",
     ["mychadge"] = basePath .. "mychadge.tga:28:28",
     ["treeDance"] = basePath .. "treeDance.tga:28:28",
     ["ONEBADDAY"] = basePath .. "ONEBADDAY.tga:28:28",
