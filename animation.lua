@@ -33,8 +33,8 @@ TwitchEmotes_animation_metadata[basePath .. "UHMM.tga"] = {["nFrames"] = 2, ["fr
 TwitchEmotes_animation_metadata[basePath .. "YAPP.tga"] = {["nFrames"] = 2, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 64, ["framerate"] = 12}
 TwitchEmotes_animation_metadata[basePath .. "boobaCheck.tga"] = {["nFrames"] = 28, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 1024, ["framerate"] = 9}
 TwitchEmotes_animation_metadata[basePath .. "obliteratedthanaho.tga"] = {["nFrames"] = 134, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 8192, ["framerate"] = 21}
-TwitchEmotes_animation_metadata[basePath .. "REDDERS.tga"] = {["nFrames"] = 4, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 128, ["framerate"] = 21}
-TwitchEmotes_animation_metadata[basePath .. "BLUERS.tga"] = {["nFrames"] = 16, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 512, ["framerate"] = 56}
+TwitchEmotes_animation_metadata[basePath .. "REDDERS.tga"] = {["nFrames"] = 4, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 128, ["framerate"] = 20}
+TwitchEmotes_animation_metadata[basePath .. "BLUERS.tga"] = {["nFrames"] = 16, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 512, ["framerate"] = 80}
 TwitchEmotes_animation_metadata[basePath .. "OhGodItsMoonMoonChasingYouThroughTheBorealWinterPLEASERUNQUICKLYANDFINDCOVERHEHASBADINTENTIONS.tga"] = {["nFrames"] = 157, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 8192, ["framerate"] = 27}
 TwitchEmotes_animation_metadata[basePath .. "IVEGONEPASTTHEPOINTOFINSANITY.tga"] = {["nFrames"] = 80, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 4096, ["framerate"] = 18}
 TwitchEmotes_animation_metadata[basePath .. "redPls.tga"] = {["nFrames"] = 8, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 256, ["framerate"] = 12}
