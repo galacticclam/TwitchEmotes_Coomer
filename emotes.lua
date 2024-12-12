@@ -170,6 +170,7 @@ judhead_emotes = {
     ["blueLooking"] = basePath .. "blueLooking.tga:28:28",
     ["redandblue"] = basePath .. "redandblue.tga:28:28",
     ["redPondering"] = basePath .. "redPondering.tga:28:42",
+    ["bluePondering"] = basePath .. "bluePondering.tga:28:42",
     ["redCaught"] = basePath .. "redCaught.tga:28:56",
     ["redless"] = basePath .. "redless.tga:28:28",
     ["redConcerned"] = basePath .. "redConcerned.tga:28:28",
