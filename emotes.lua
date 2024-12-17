@@ -180,4 +180,9 @@ judhead_emotes = {
     ["barkbig"] = basePath .. "barkbig.tga:28:28",
     ["judW"] = basePath .. "judW.tga:28:28",
     ["judhead2"] = basePath .. "judhead2.tga:24:28",
+    ["COGGERS"] = basePath .. "COGGERS.tga:28:28",
+    ["COUNTERCOGGERS"] = basePath .. "COUNTERCOGGERS.tga:28:28",
+    ["lulWut"] = basePath .. "lulWut.tga:28:28",
+    ["redHmm"] = basePath .. "redHmm.tga:28:28",
+    ["blueHmm"] = basePath .. "blueHmm.tga:28:28",
 }

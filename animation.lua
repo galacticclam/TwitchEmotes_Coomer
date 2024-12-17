@@ -39,3 +39,5 @@ TwitchEmotes_animation_metadata[basePath .. "OhGodItsMoonMoonChasingYouThroughTh
 TwitchEmotes_animation_metadata[basePath .. "IVEGONEPASTTHEPOINTOFINSANITY.tga"] = {["nFrames"] = 80, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 4096, ["framerate"] = 18}
 TwitchEmotes_animation_metadata[basePath .. "redPls.tga"] = {["nFrames"] = 8, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 256, ["framerate"] = 12}
 TwitchEmotes_animation_metadata[basePath .. "bluePls.tga"] = {["nFrames"] = 255, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 8192, ["framerate"] = 36}
+TwitchEmotes_animation_metadata[basePath .. "COGGERS.tga"] = {["nFrames"] = 30, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 1024, ["framerate"] = 18}
+TwitchEmotes_animation_metadata[basePath .. "COUNTERCOGGERS.tga"] = {["nFrames"] = 30, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 1024, ["framerate"] = 18}
