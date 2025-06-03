@@ -15,9 +15,10 @@ version_classic=$(grep "Version: " TwitchEmotes_Coomer-Classic.toc | cut -d ' ' 
 version="$version_mainline-$stage"
 
 dist_root="dist"
-dist_dir="$dist_root/TwitchEmotes_Coomer"
-zip_name="$dist_root/TwitchEmotes_Coomer-$version.zip"
+dist_dir="TwitchEmotes_Coomer"
+zip_name="TwitchEmotes_Coomer-$version.zip"
 
 make build
 
-powershell Compress-Archive -Force "$dist_dir" "$zip_name"
+rm -f "$dist_root/$zip_name"
+(cd "$dist_root" && "/c/Program Files/7-Zip/7z" a "$zip_name" "$dist_dir")
