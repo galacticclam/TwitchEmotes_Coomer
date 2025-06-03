@@ -61,7 +61,7 @@ final_w=$(($final_w+1))
 
 magick "$image_appended" -background none -gravity North -extent "32x${final_h}" "$image_final"
 
-emotes_newline='["'$2'"] = basePath .. "'$2'.tga:56:28",'
+emotes_newline='["'$2'"] = basePath .. "'$2'.tga:28:28",'
 sed -i -e '$i\'"    $emotes_newline" emotes.lua
 
 animation_newline="TwitchEmotes_animation_metadata[basePath .. \"$2.tga\"] = {[\"nFrames\"] = $frames, [\"frameWidth\"] = $orig_w, [\"frameHeight\"] = 32, [\"imageWidth\"] = $final_w, [\"imageHeight\"] = $final_h, [\"framerate\"] = 18}";
