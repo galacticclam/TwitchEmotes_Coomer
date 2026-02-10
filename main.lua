@@ -123,7 +123,7 @@ end
 
 function TwitchEmotesAnimator_UpdateEmoteInFontString(fontstring, widthOverride, heightOverride)
     local txt = fontstring:GetText();
-    if (txt ~= nil) then
+    if (txt ~= nil and not issecretvalue(txt)) then
         for emoteTextureString in txt:gmatch("(|TInterface\\AddOns\\TwitchEmotes.-|t)") do
             local imagepath = emoteTextureString:match("|T(Interface\\AddOns\\TwitchEmotes.-tga).-|t")
 
