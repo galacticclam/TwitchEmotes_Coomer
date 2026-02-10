@@ -1,8 +1,14 @@
+local judhead_exists_both = {}
+
 function judhead_startup()
     local suggestions = {};
     local i = 1;
 
     for k, v in pairs(judhead_emotes) do
+        if TwitchEmotes_defaultpack[k] ~= nil then
+            judhead_exists_both[k] = true
+        end
+
         TwitchEmotes:AddEmote(k, k, v);
 
         suggestions[i] = k;
@@ -12,11 +18,25 @@ function judhead_startup()
     judhead_initsuggestions(suggestions);
 end
 
+-- Merges table entries from t2 into t1 if they don't exist in t1
 function judhead_concat(t1, t2)
-    for i=1,#t2 do
-        t1[#t1+1] = t2[i]
+    local set = {}
+    for i=1,#t1 do
+        set[t1[i]] = true
     end
-    return t1
+
+    for i=1,#t2 do
+        if set[t2[i]] == nil then
+            t1[#t1+1] = t2[i]
+        end
+    end
+
+    return result
+end
+
+
+function judhead_get_id(text)
+    return string.match("Interface\\AddOns\\TwitchEmotes_Coomer\\emotes\\Corpa.tga:28:28", "([^\\\\]+).tga:")
 end
 
 function judhead_initsuggestions(suggestions)
@@ -41,7 +61,15 @@ function judhead_initsuggestions(suggestions)
                         UpdateEmoteStats(suggestion, true, false, false);
                     end
                 end,
-                renderSuggestionFN = Emoticons_RenderSuggestionFN,
+                renderSuggestionFN = function(text)
+                    if judhead_emotes[text] ~= nil then
+                        if judhead_exists_both[text] ~= nil then
+                            return Emoticons_RenderSuggestionFN(text) .. "    |cffffff00<Coomer and default pack>|r"
+                        end
+                        return Emoticons_RenderSuggestionFN(text) .. "    |cffffff00<Coomer>|r"
+                    end
+                    return Emoticons_RenderSuggestionFN(text)
+                end,
                 suggestionBiasFN = function(suggestion, text)
                     --Bias the sorting function towards the most autocompleted emotes
                     if TwitchEmoteStatistics ~= nil and TwitchEmoteStatistics[suggestion] ~= nil then
@@ -105,13 +133,13 @@ function TwitchEmotesAnimator_UpdateEmoteInFontString(fontstring, widthOverride,
                 local framenum = TwitchEmotes_GetCurrentFrameNum(animdata);
                 local nTxt;
                 if(widthOverride ~= nil or heightOverride ~= nil) then
-                    nTxt = txt:gsub(escpattern(emoteTextureString),
-                                        TwitchEmotes_BuildEmoteFrameStringWithDimensions(
-                                        imagepath, animdata, framenum, widthOverride, heightOverride))
+                    local str = TwitchEmotes_BuildEmoteFrameStringWithDimensions(imagepath, animdata, framenum, widthOverride, heightOverride)
+                    -- print(str)
+                    nTxt = txt:gsub(escpattern(emoteTextureString), str)
                 else
-                    nTxt = txt:gsub(escpattern(emoteTextureString),
-                                      TwitchEmotes_BuildEmoteFrameString(
-                                        imagepath, animdata, framenum))
+                    local str = TwitchEmotes_BuildEmoteFrameString(imagepath, animdata, framenum)
+                    -- print(str)
+                    nTxt = txt:gsub(escpattern(emoteTextureString), str)
                 end
 
                 -- If we're updating a chat message we need to alter the messageInfo as wel
