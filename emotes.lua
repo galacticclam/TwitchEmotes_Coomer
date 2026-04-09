@@ -234,4 +234,5 @@ judhead_emotes = {
     ["BANERS"] = basePath .. "BANERS.tga:28:28",
     ["SpeedR"] = basePath .. "SpeedR.tga:28:28",
     ["SpeedL"] = basePath .. "SpeedL.tga:28:28",
+    ["SendNote"] = basePath .. "SendNote.tga:28:28",
 }
