@@ -59,3 +59,9 @@ TwitchEmotes_animation_metadata[basePath .. "glorpHop.tga"] = {["nFrames"] = 117
 TwitchEmotes_animation_metadata[basePath .. "BANERS.tga"] = {["nFrames"] = 2, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 64, ["framerate"] = 9}
 TwitchEmotes_animation_metadata[basePath .. "SpeedR.tga"] = {["nFrames"] = 11, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 512, ["framerate"] = 18}
 TwitchEmotes_animation_metadata[basePath .. "SpeedL.tga"] = {["nFrames"] = 11, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 32, ["imageHeight"] = 512, ["framerate"] = 18}
+TwitchEmotes_animation_metadata[basePath .. "Aldentge.tga"] = {["nFrames"] = 103, ["frameWidth"] = 64, ["frameHeight"] = 32, ["imageWidth"] = 124, ["imageHeight"] = 6592, ["framerate"] = 18, ["imageFrameHeight"] = 64}
+TwitchEmotes_animation_metadata[basePath .. "buhFlipExplode.tga"] = {["nFrames"] = 61, ["frameWidth"] = 64, ["frameHeight"] = 32, ["imageWidth"] = 192, ["imageHeight"] = 3904, ["framerate"] = 28, ["imageFrameHeight"] = 64}
+TwitchEmotes_animation_metadata[basePath .. "monkeFell.tga"] = {["nFrames"] = 142, ["frameWidth"] = 64, ["frameHeight"] = 32, ["imageWidth"] = 96, ["imageHeight"] = 9088, ["framerate"] = 28, ["imageFrameHeight"] = 64}
+TwitchEmotes_animation_metadata[basePath .. "Tssk.tga"] = {["nFrames"] = 24, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 64, ["imageHeight"] = 1536, ["framerate"] = 48, ["imageFrameHeight"] = 64}
+TwitchEmotes_animation_metadata[basePath .. "sAAAdge.tga"] = {["nFrames"] = 54, ["frameWidth"] = 32, ["frameHeight"] = 32, ["imageWidth"] = 64, ["imageHeight"] = 3456, ["framerate"] = 22}
+TwitchEmotes_animation_metadata[basePath .. "ono.tga"] = {["nFrames"] = 48, ["frameWidth"] = 64, ["frameHeight"] = 32, ["imageWidth"] = 94, ["imageHeight"] = 3072, ["framerate"] = 22, ["imageFrameHeight"] = 64}

@@ -19,8 +19,9 @@ fi
 # second number is width
 # magick "$image" -resize "64x64" -background none -gravity center -extent "64x64" "$image"
 # magick "$image" -resize "64x128" -background none -gravity center -extent "64x128" "$image"
+# magick "$image" -resize "64x192" -background none -gravity center -extent "64x192" "$image"
 
-newline='["'$2'"] = basePath .. "'$2'.tga:28:28",'
+newline='["'$2'"] = basePath .. "'$2'.tga:28:84",'
 
 # Insert before the last line (before the closing bracket)
 sed -i -e '$i\'"    $newline" emotes.lua

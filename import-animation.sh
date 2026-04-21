@@ -29,16 +29,22 @@ if [ $# -ge 4 ] ; then
     done
 
     # TODO: Resize frames
-    magick ${frames[@]} -resize "32x32" -append "$image_appended"
+    # magick ${frames[@]} -resize "64x124" -append "$image_appended"
+    magick ${frames[@]} -resize x64 -append "$image_appended"
 else
     # TODO: Resize frames
-    magick import/dump_* -resize "32x32" -background none -gravity center -extent "32x32" -append "$image_appended"
+    # magick import/dump_* -resize "64x124" -background none -gravity center -extent "64x124" -append "$image_appended"
+    # magick import/dump_* -resize x64 -background none -append "$image_appended"
+    # magick import/dump_* -resize "128x64" -background none -gravity center -extent "128x64" -append "$image_appended"
+    magick import/dump_* -resize x64 -background none -append "$image_appended"
 fi
 
 orig_h=$(magick identify -ping -format '%h' "$image_appended")
 orig_w=$(magick identify -ping -format '%w' "$image_appended")
 
-frames=$(($orig_h/32))
+# echo $orig_w $orig_h
+
+frames=$(($orig_h/64))
 
 # Round h up to the next power of 2
 final_h=$(($orig_h-1))
@@ -59,10 +65,16 @@ final_w=$(($final_w|($final_w>>16)))
 final_w=$(($final_w|($final_w>>32)))
 final_w=$(($final_w+1))
 
-magick "$image_appended" -background none -gravity North -extent "32x${final_h}" "$image_final"
+final_w=$orig_w
+final_h=$orig_h
+
+# echo $final_h
+
+# magick "$image_appended" -background none -gravity North -extent "64x${final_h}" "$image_final"
+cp "$image_appended" "$image_final"
 
 emotes_newline='["'$2'"] = basePath .. "'$2'.tga:28:28",'
 sed -i -e '$i\'"    $emotes_newline" emotes.lua
 
-animation_newline="TwitchEmotes_animation_metadata[basePath .. \"$2.tga\"] = {[\"nFrames\"] = $frames, [\"frameWidth\"] = $orig_w, [\"frameHeight\"] = 32, [\"imageWidth\"] = $final_w, [\"imageHeight\"] = $final_h, [\"framerate\"] = 18}";
+animation_newline="TwitchEmotes_animation_metadata[basePath .. \"$2.tga\"] = {[\"nFrames\"] = $frames, [\"frameWidth\"] = 64, [\"frameHeight\"] = 32, [\"imageWidth\"] = $final_w, [\"imageHeight\"] = $final_h, [\"framerate\"] = 18}";
 echo "$animation_newline" >> animation.lua

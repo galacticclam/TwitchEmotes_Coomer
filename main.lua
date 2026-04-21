@@ -121,6 +121,24 @@ local function escpattern(x)
              :gsub('%?', '%%?'))
 end
 
+function TwitchEmotes_BuildEmoteFrameStringWithDimensions(imagepath, animdata,
+														framenum, framewidth,
+														frameheight)
+    local imageFrameHeight = animdata.imageFrameHeight
+    if imageFrameHeight == nil then
+        imageFrameHeight = animdata.imageWidth
+    end
+
+	local top = framenum * imageFrameHeight;
+	local bottom = top + imageFrameHeight;
+
+	local emoteStr = "|T" .. imagepath .. ":" .. frameheight .. ":" ..
+						framewidth .. ":0:0:" .. animdata.imageWidth .. ":" ..
+						animdata.imageHeight .. ":0:" .. animdata.imageWidth ..
+						":" .. top .. ":" .. bottom .. "|t";
+	return emoteStr
+end
+
 function TwitchEmotesAnimator_UpdateEmoteInFontString(fontstring, widthOverride, heightOverride)
     local txt = fontstring:GetText();
     if (txt ~= nil and not issecretvalue(txt)) then
@@ -133,7 +151,8 @@ function TwitchEmotesAnimator_UpdateEmoteInFontString(fontstring, widthOverride,
                 local framenum = TwitchEmotes_GetCurrentFrameNum(animdata);
                 local nTxt;
                 if(widthOverride ~= nil or heightOverride ~= nil) then
-                    local str = TwitchEmotes_BuildEmoteFrameStringWithDimensions(imagepath, animdata, framenum, widthOverride, heightOverride)
+                    local correctedWidthOverride = (widthOverride * animdata.frameWidth) / animdata.frameHeight
+                    local str = TwitchEmotes_BuildEmoteFrameStringWithDimensions(imagepath, animdata, framenum, correctedWidthOverride, heightOverride)
                     -- print(str)
                     nTxt = txt:gsub(escpattern(emoteTextureString), str)
                 else
